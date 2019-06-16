@@ -1,0 +1,18 @@
+/*
+https://www.codingcreativo.it/convertitore-decimale-binario/
+*/
+....
+function dec_bin(num){
+	n = document.getElementById("decimale").value; 
+	binario = "";
+
+	while(n!=0) {
+		resto = n%2; 
+		n = (n-resto)/2; 
+		binario = resto + binario;
+	}
+	
+	return binario;
+}
+....vedi l'esempio completo su
+https://www.codingcreativo.it/convertitore-decimale-binario/
